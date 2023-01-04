@@ -59,3 +59,8 @@ input {
     justify-content: left;
     width: 100%;
 }
+
+main>h1{
+    display: flex;
+    align-self: flex-start;
+}
