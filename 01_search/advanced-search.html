@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+        <title>Advanced Search</title>
         <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
         <nav>
@@ -10,31 +12,39 @@
                 <li><a href="index.html">Google Search</a></li>
             </ul>
           </nav>
-        <main>
-            <h1>Find pages with...</h1>
-            <div id="advanced-search">
-                <form action="https://www.google.com/search">
-    
-                    <div class="justify-content-row">
-                        <label for="as_q">all this words</label>
-                        <input type="text" name="as_q">
-                    </div>
-                    <div class="justify-content-row">
-                        <label for="as_epq">this exact word or phrase</label>
-                        <input type="text" name="as_epq">
-                    </div>
-                    <div class="justify-content-row">
-                        <label for="as_oq">any of these words</label>
-                        <input type="text" name="as_oq">
-                    </div>
-                    <div class="justify-content-row">
-                        <label for="as_eq">none of these words</label>
-                        <input type="text" name="as_eq">
-                    </div>
-                    <input type="submit" value="Google Search">
 
-                </form>
-            </div>
-        </main>  
+        <h1>Advanced Search</h1>
+
+        <div id="line"></div>
+
+        <main id="advanced-search">
+                
+                <h2>Find pages with...</h2>
+
+                
+                    <form id="search-box" action="https://www.google.com/search">
+    
+                        <div class="justify-content-row">
+                            <label for="as_q">all these words:</label>
+                            <input type="text" name="as_q">
+                        </div>
+                        <div class="justify-content-row">
+                            <label for="as_epq">this exact word or phrase:</label>
+                            <input type="text" name="as_epq">
+                        </div>
+                        <div class="justify-content-row">
+                            <label for="as_oq">any of these words:</label>
+                            <input type="text" name="as_oq">
+                        </div>
+                        <div class="justify-content-row">
+                            <label for="as_eq">none of these words:</label>
+                            <input type="text" name="as_eq">
+                        </div>
+                        <input id="adv-search-button" type="submit" value="Advanced Search">
+
+                    </form>
+                
+        </main>
+
     </body>
 </html>
